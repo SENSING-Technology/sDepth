@@ -1,17 +1,17 @@
-# 双目深度估计SDK
+# Binocular Depth Estimation SDK
 
-本项目是一个基于C++和TensorRT的双目深度估计SDK，运行平台为NVIDIA Jetson Orin平台。
+This project is a binocular depth estimation SDK based on C++ and TensorRT, running on NVIDIA Jetson Orin platform.
 
-## 依赖
+## Dependencies
 
-- **JetPack 6.1+**: 
+- **JetPack 6.1+**:
   - **CUDA 12.6**
   - **TensorRT 10.3** 
   - **OpenCV 4.8+** 
-- **C++17** 编译器 (g++)
+- **C++17** compiler (g++)
 - **CMake 3.16+**
 
-## 文件结构
+## File Structure
 
 ```
 sDepth/
@@ -36,16 +36,16 @@ sDepth/
 
 ```
 
-## 快速开始
+## Quick Start
 
-### 1. 安装系统依赖
+### 1. Install System Dependencies
 
 ```bash
 sudo apt update
 sudo apt install cmake build-essential
 ```
 
-### 2. 手动构建
+### 2. Manual Build
 
    ```bash
    cd sDepth
@@ -55,20 +55,18 @@ sudo apt install cmake build-essential
    make -j$(nproc)
    ```
 
-## 编译输出
+## Compilation Output
 
-在 `sDepth/build` 目录下生成可执行程序：
+The executable program is generated in the `sDepth/build` directory:
 
 ```bash
 demo 
 ```
 
-## 运行示例
+## Run Example
 
 ```bash
 ./demo <keyfile_name>
 ```
 
-- **`<keyfile_name>`**: 模型Licens文件，请联系业务获取（业务邮箱：`<qah@sensing-world.com>`）
-
-
+- **`<keyfile_name>`**: Model license file, please contact business for it (business email: `<qah@sensing-world.com>`)
